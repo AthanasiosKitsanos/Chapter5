@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+        {
+            "label": "Token_Calculator",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "${workspaceFolder}/Try_This/token_calculator.cpp",
+                "${workspaceFolder}/Try_This/Classes/Token/token.cpp",
+                "${workspaceFolder}/Try_This/Classes/Token_Stream/token_stream.cpp",
+                "${workspaceFolder}/Try_This/Classes/Global/global.cpp",
+                "-I${workspaceFolder}/Headers",
+                "-I${workspaceFolder}/Try_This/Classes/Token",
+                "-I${workspaceFolder}/Try_This/Classes/Token_Stream",
+                "-I${workspaceFolder}/Try_This/Classes/Global",
+                "-o",
+                "${workspaceFolder}/Build/token_calculator.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
