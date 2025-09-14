@@ -5,9 +5,12 @@
       "includePath": [
         "${workspaceFolder}/**",
         "${workspaceFolder}/Headers",
-        "${workspaceFolder}/Try_This/Classes/Token",
-        "${workspaceFolder}/Try_This/Classes/Token_Stream",
-        "${workspaceFolder}/Try_This/Classes/Global"
+        // "${workspaceFolder}/Try_This/Classes/Token",
+        // "${workspaceFolder}/Try_This/Classes/Token_Stream",
+        // "${workspaceFolder}/Try_This/Classes/Global",
+        "${workspaceFolder}/Exercises/Exercise2/Classes/Token",
+        "${workspaceFolder}/Exercises/Exercise2/Classes/Token_Stream",
+        "${workspaceFolder}/Exercises/Exercise2/Classes/Global"
       ],
       "defines": [],
       "compilerPath": "C:/msys64/ucrt64/bin/g++.exe",

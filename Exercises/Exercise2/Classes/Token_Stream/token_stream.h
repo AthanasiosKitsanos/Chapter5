@@ -1,12 +1,11 @@
 #pragma once
-
-class Token;
+#include "token.h"
 
 class Token_Stream
 {
     private:
-        static bool is_full;
-        static Token buffer;
+        bool is_full;
+        Token buffer;
 
     public:
         Token_Stream();

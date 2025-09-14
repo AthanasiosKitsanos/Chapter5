@@ -2,11 +2,8 @@
 #include "token_stream.h"
 #include "token.h"
 
-Token_Stream::Token_Stream() {}
+Token_Stream::Token_Stream():buffer(Token{}), is_full(false) {}
 Token_Stream::~Token_Stream() {}
-
-Token Token_Stream::buffer = Token();
-bool Token_Stream::is_full = false;
 
 Token Token_Stream::get()
 {
@@ -20,8 +17,10 @@ Token Token_Stream::get()
     std::cin >> ch;
     switch (ch)
     {
-        case '(': case ')': case '+': case '-': case '*': case '/': case 'q': case ';': case '\n':
+        case '(': case ')': case '+': case '-': case '*': case '/': case 'q': case ';': case '\n': case '{': case '}':
+        case '!': // added the ability to use {} and factorial
             return Token{ch};
+
 
         case '.':
         case '0':
@@ -38,7 +37,8 @@ Token Token_Stream::get()
                 std::cin.putback(ch);
                 double val;
                 std::cin >> val;
-                return Token{'8', val};
+
+                return Token(_KIND_IS_NUMBER, val);
             }
 
         default:

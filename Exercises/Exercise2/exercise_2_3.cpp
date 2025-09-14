@@ -1,12 +1,13 @@
 #include "headers.h"
 #include "token.h"
 #include "token_stream.h"
+#include "global.h"
 
 int main()
 {
     try
     {
-        initialize_stream_pointer();
+        initialize_pointer();
 
         double val = 0;
         
@@ -37,7 +38,7 @@ int main()
         std::cerr << e.what() << std::endl;
     }
 
-    delete_stream_pointer();
+    delete_pointer();
 
     std::cin.clear();
     std::cout << "Press any key to exit...";

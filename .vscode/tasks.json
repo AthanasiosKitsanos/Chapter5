@@ -25,6 +25,52 @@
             "problemMatcher": [
                 "$gcc"
             ]
+        },
+
+        {
+            "label": "Faulty_Calculator",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "${workspaceFolder}/Drill/faulty_calculator.cpp",
+                "-I${workspaceFolder}/Headers",
+                "-o",
+                "${workspaceFolder}/Build/faulty_calculator.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+
+        {
+            "label": "Exercise_2_3",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "${workspaceFolder}/Exercises/Exercise2/exercise_2_3.cpp",
+                "${workspaceFolder}/Exercises/Exercise2/Classes/Token/token.cpp",
+                "${workspaceFolder}/Exercises/Exercise2/Classes/Token_Stream/token_stream.cpp",
+                "${workspaceFolder}/Exercises/Exercise2/Classes/Global/global.cpp",
+                "-I${workspaceFolder}/Headers",
+                "-I${workspaceFolder}/Exercises/Exercise2/Classes/Token",
+                "-I${workspaceFolder}/Exercises/Exercise2/Classes/Token_Stream",
+                "-I${workspaceFolder}/Exercises/Exercise2/Classes/Global",
+                "-o",
+                "${workspaceFolder}/Build/exercise_2_3.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
         }
     ]
 }
