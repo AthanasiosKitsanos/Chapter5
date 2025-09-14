@@ -53,16 +53,38 @@
             "command": "g++",
             "args": [
                 "-g",
-                "${workspaceFolder}/Exercises/Exercise2/exercise_2_3.cpp",
-                "${workspaceFolder}/Exercises/Exercise2/Classes/Token/token.cpp",
-                "${workspaceFolder}/Exercises/Exercise2/Classes/Token_Stream/token_stream.cpp",
-                "${workspaceFolder}/Exercises/Exercise2/Classes/Global/global.cpp",
+                "${workspaceFolder}/Exercises/Exercise2_3/exercise_2_3.cpp",
+                "${workspaceFolder}/Exercises/Exercise2_3/Classes/Token/token.cpp",
+                "${workspaceFolder}/Exercises/Exercise2_3/Classes/Token_Stream/token_stream.cpp",
+                "${workspaceFolder}/Exercises/Exercise2_3/Classes/Global/global.cpp",
                 "-I${workspaceFolder}/Headers",
-                "-I${workspaceFolder}/Exercises/Exercise2/Classes/Token",
-                "-I${workspaceFolder}/Exercises/Exercise2/Classes/Token_Stream",
-                "-I${workspaceFolder}/Exercises/Exercise2/Classes/Global",
+                "-I${workspaceFolder}/Exercises/Exercise2_3/Classes/Token",
+                "-I${workspaceFolder}/Exercises/Exercise2_3/Classes/Token_Stream",
+                "-I${workspaceFolder}/Exercises/Exercise2_3/Classes/Global",
                 "-o",
                 "${workspaceFolder}/Build/exercise_2_3.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+
+        {
+            "label": "Exercise_4",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "${workspaceFolder}/Exercises/Exercise4/exercise_4.cpp",
+                "${workspaceFolder}/Exercises/Exercise4/Classes/name_value.cpp",
+                "-I${workspaceFolder}/Headers",
+                "-I${workspaceFolder}/Exercises/Exercise4/Classes",
+                "-o",
+                "${workspaceFolder}/Build/exercise_4.exe"
             ],
             "group": {
                 "kind": "build",
