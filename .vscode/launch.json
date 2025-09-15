@@ -59,6 +59,21 @@
             "MIMode": "gdb",
             "miDebuggerPath": "C:/msys64/ucrt64/bin/gdb.exe",
             "preLaunchTask": "Exercise_4"
+        },
+
+        {
+            "name": "Exercise_5",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/Build/exercise_5.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:/msys64/ucrt64/bin/gdb.exe",
+            "preLaunchTask": "Exercise_5"
         }
     ]
 }

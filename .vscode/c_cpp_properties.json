@@ -8,10 +8,14 @@
         // "${workspaceFolder}/Try_This/Classes/Token",
         // "${workspaceFolder}/Try_This/Classes/Token_Stream",
         // "${workspaceFolder}/Try_This/Classes/Global",
-        "${workspaceFolder}/Exercises/Exercise2_3/Classes/Token",
-        "${workspaceFolder}/Exercises/Exercise2_3/Classes/Token_Stream",
-        "${workspaceFolder}/Exercises/Exercise2_3/Classes/Global",
-        "${workspaceFolder}/Exercises/Exercise4/Classes/"
+        // "${workspaceFolder}/Exercises/Exercise2_3/Classes/Token",
+        // "${workspaceFolder}/Exercises/Exercise2_3/Classes/Token_Stream",
+        // "${workspaceFolder}/Exercises/Exercise2_3/Classes/Global",
+        //"${workspaceFolder}/Exercises/Exercise4/Classes/",
+        "${workspaceFolder}/Exercises/Exercise5/**",
+        "${workspaceFolder}/Exercises/Exercise5/Classes/Token",
+        "${workspaceFolder}/Exercises/Exercise5/Classes/Token_Stream",
+        "${workspaceFolder}/Exercises/Exercise5/Classes/Global"
 
       ],
       "defines": [],

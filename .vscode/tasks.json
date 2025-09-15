@@ -93,6 +93,32 @@
             "problemMatcher": [
                 "$gcc"
             ]
+        },
+
+        {
+            "label": "Exercise_5",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "${workspaceFolder}/Exercises/Exercise5/exercise_5.cpp",
+                "${workspaceFolder}/Exercises/Exercise5/Classes/Global/global.cpp",
+                "${workspaceFolder}/Exercises/Exercise5/Classes/Token/token.cpp",
+                "${workspaceFolder}/Exercises/Exercise5/Classes/Token_Stream/token_stream.cpp",
+                "-I${workspaceFolder}/Headers",
+                "-I${workspaceFolder}/Exercises/Exercise5/Classes/Token",
+                "-I${workspaceFolder}/Exercises/Exercise5/Classes/Global",
+                "-I${workspaceFolder}/Exercises/Exercise5/Classes/Token_Stream",
+                "-o",
+                "${workspaceFolder}/Build/exercise_5.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
         }
     ]
 }
