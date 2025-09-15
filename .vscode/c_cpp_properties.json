@@ -15,7 +15,8 @@
         "${workspaceFolder}/Exercises/Exercise5/**",
         "${workspaceFolder}/Exercises/Exercise5/Classes/Token",
         "${workspaceFolder}/Exercises/Exercise5/Classes/Token_Stream",
-        "${workspaceFolder}/Exercises/Exercise5/Classes/Global"
+        "${workspaceFolder}/Exercises/Exercise5/Classes/Global",
+        "${workspaceFolder}/Exercises/Exercise6/**"
 
       ],
       "defines": [],
