@@ -8,17 +8,18 @@ class Token
         static Token_Stream* ts;
 
     public:
-        double value;
+        int value;
         char kind;
 
         Token();
-        Token(char& k);
-        Token(char& k, int& v);
+        Token(char k);
+        Token(char k, int v);
         ~Token();
 
-        void expression();
-        void term();
-        void primary();
+        int binary_or();
+        int binary_xor();
+        int binary_and();
+        int primary();
 
         static void set_to_global(Token_Stream* ptr);
         static void delete_from_global();
