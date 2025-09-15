@@ -45,7 +45,7 @@ int main()
             while(!is_ready)
             {
                 is_ready = true;
-
+                
                 for(int i = 0; i < input_vector.size(); i++)
                 {    
                     std::cin >> c;
@@ -59,6 +59,21 @@ int main()
 
                     exit += c;
                     input_vector[i] = c;
+                    
+                    for(int j = 0; j <= i; i++)
+                    {
+                        if(input_vector[i] == input_vector[j])
+                        {
+                            is_ready = false;
+                            std::cout << "All characters must be different" << std::endl;
+                            break;
+                        }
+                    }
+
+                    if(!is_ready)
+                    {
+                        break;
+                    }
                 }
             }
         }
