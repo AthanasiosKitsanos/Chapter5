@@ -8,7 +8,7 @@ int main()
     while(!stop)
     {
         Stream str;
-        
+
         try
         {
             while(std::cin)
@@ -23,6 +23,7 @@ int main()
 
                 if(c == 'q')
                 {
+                    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
                     stop = true;
                     break;
                 }
@@ -42,13 +43,18 @@ int main()
             continue;
         }
 
-        if(str.digits() == 0)
+        if(!stop)
         {
-            std::cout << "No input found" << std::endl;
-            continue;
+            if(str.digits() == 0)
+            {
+                std::cout << "No input found" << std::endl;
+                continue;
+            }
+
+            str.print();
         }
 
-        str.print();
+        
     }
 
     std::cout << "Press any key to exit...";
