@@ -12,12 +12,8 @@
         // "${workspaceFolder}/Exercises/Exercise2_3/Classes/Token_Stream",
         // "${workspaceFolder}/Exercises/Exercise2_3/Classes/Global",
         //"${workspaceFolder}/Exercises/Exercise4/Classes/",
-        "${workspaceFolder}/Exercises/Exercise5/**",
-        "${workspaceFolder}/Exercises/Exercise5/Classes/Token",
-        "${workspaceFolder}/Exercises/Exercise5/Classes/Token_Stream",
-        "${workspaceFolder}/Exercises/Exercise5/Classes/Global",
-        "${workspaceFolder}/Exercises/Exercise6/**"
-
+        "${workspaceFolder}/Exercises/**",
+        "${workspaceFolder}/Exercises/Exercise7/Classes"
       ],
       "defines": [],
       "compilerPath": "C:/msys64/ucrt64/bin/g++.exe",

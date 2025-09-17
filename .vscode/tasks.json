@@ -139,6 +139,28 @@
             "problemMatcher": [
                 "$gcc"
             ]
+        },
+
+        {
+            "label": "Exercise_7",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "${workspaceFolder}/Exercises/Exercise7/exercise_7.cpp",
+                "${workspaceFolder}/Exercises/Exercise7/Classes/stream.cpp",
+                "-I${workspaceFolder}/Headers",
+                "-I${workspaceFolder}/Exercises/Exercise7/Classes",
+                "-o",
+                "${workspaceFolder}/Build/exercise_7.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
         }
     ]
 }
