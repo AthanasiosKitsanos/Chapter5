@@ -11,6 +11,12 @@ void Stream::get()
 
     switch(c)
     {
+        case ' ':
+            break;
+
+        case '\n':
+            break;
+
         case '0': case '1': case '2': case '3': case '4': case '5': case '6': case '7': case '8': case '9':
         {
             count++;
@@ -63,4 +69,10 @@ void Stream::print()
                 break;
         }    
     }
+}
+
+void Stream::reset_stream()
+{
+    count = 0;
+    number = 0;
 }

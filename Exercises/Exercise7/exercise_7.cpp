@@ -3,58 +3,40 @@
 
 int main()
 {   
-    bool stop = false;
+    Stream str;
 
-    while(!stop)
-    {
-        Stream str;
-
-        try
+    try
+    {   
+        while(std::cin)
         {
-            while(std::cin)
+            char c;
+            std::cin.get(c);
+
+            if(c == 'q')
             {
-                char c;
-                std::cin.get(c);
+                str.get();
+                break;
+            }
 
-                if(c == '\n')
+            if(c == '\n')
+            {
+                if(str.digits() == 0)
                 {
-                    break;
-                }
-
-                if(c == 'q')
-                {
-                    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-                    stop = true;
-                    break;
-                }
-
-                if(c == ' ')
-                {
+                    std::cout << "No input found" << std::endl;
                     continue;
                 }
-
-                std::cin.putback(c);
-                str.get();
-            }
-        }
-        catch(std::runtime_error& e)
-        {
-            std::cout << e.what() << std::endl;
-            continue;
-        }
-
-        if(!stop)
-        {
-            if(str.digits() == 0)
-            {
-                std::cout << "No input found" << std::endl;
-                continue;
+                
+                str.print();
+                str.reset_stream();
             }
 
-            str.print();
+            std::cin.putback(c);
+            str.get();
         }
-
-        
+    }
+    catch(std::runtime_error& e)
+    {
+        std::cout << e.what() << std::endl;
     }
 
     std::cout << "Press any key to exit...";

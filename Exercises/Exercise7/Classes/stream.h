@@ -3,9 +3,9 @@
 class Stream
 {
     private:
+        int number;
         int count;
         char c_number;
-        int number;
 
     public:
         Stream();
@@ -15,4 +15,5 @@ class Stream
         int digits();
 
         void print();
+        void reset_stream();
 };
